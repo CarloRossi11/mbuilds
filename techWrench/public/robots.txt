@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://techwrench.netlify.app/sitemap.xml
