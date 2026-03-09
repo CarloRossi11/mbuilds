@@ -1,0 +1,117 @@
+.main {
+  padding: 2rem;
+  color: #051D22;
+}
+
+.heroArea {
+  background-color: #051D22;
+  height: 500px;
+  color: #CFC6BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0px -1px 10px 0px #000000c8;
+}
+
+.ctas {
+  display: flex;
+  gap: 16px;
+}
+
+.ctas a {
+  appearance: none;
+  border-radius: 128px;
+  height: 48px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+a.primary {
+  background-color: #051D22;
+  color: #CFC6BB;
+  border: var(--foreground);
+  gap: 8px;
+  margin: 1rem;
+}
+
+.establish,
+.grow,
+.expand {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.establishText,
+.growText,
+.expandText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.establishImage,
+.growImage,
+.expandImage {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.buttonContainer {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background-color: #3C6A79;
+    color: #CFC6BB;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .establish,
+  .grow,
+  .expand {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .establishText,
+  .growText,
+  .expandText {
+    display: flex;
+    width: 100%;
+  }
+
+  .establishImage,
+  .growImage,
+  .expandImage {
+    display: none;
+  }
+}

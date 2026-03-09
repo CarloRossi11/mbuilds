@@ -1,0 +1,17 @@
+.main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #fff
+}
+
+.heroArea {
+  background-color: #051D22;
+  height: 500px;
+  color: #CFC6BB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: 0px -1px 10px 0px #000000c8;
+}
