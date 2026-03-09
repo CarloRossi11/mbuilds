@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./header.module.css";
-import ScrollLogo from "./ScrollLogo";
+import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function Header() {
@@ -46,13 +46,12 @@ export default function Header() {
               damping: 20,
             }}
           >
-            <ScrollLogo
-              primarySrc="/logo-light.png"
-              secondarySrc="/logo-dark.png"
-              width={160}
-              height={40}
-              triggerId="hero"
-            />
+            <Image
+        src="/MBlogo.jpg"
+        alt="Tech Wrench logo"
+        width={75}
+        height={75}
+      />
           </MotionLink>
         </div>
         <div className={styles.linkGroup}>

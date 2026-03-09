@@ -1,38 +1,39 @@
-"use client"
+"use client";
 
-import { motion, useScroll, useTransform } from "motion/react"
-import { useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./scrollLinkImage.module.css";
 
 type Props = {
-  image: string
-  alt?: string
-  linkText: string
-  href: string
-}
+  image: string;
+  alt?: string;
+  linkText: string;
+  href: string;
+  imageHeight?: number; // optional to control link travel
+};
 
 export default function ScrollLinkImage({
   image,
   alt = "",
   linkText,
   href,
+  imageHeight = 250,
 }: Props) {
-  const ref = useRef<HTMLDivElement | null>(null)
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
-  })
+  });
 
-  // y moves from 0 → image height
-  const y = useTransform(scrollYProgress, [0, 1], [0, 250]) // 250 = image height
-  
+  const y = useTransform(scrollYProgress, [0, 1], [0, imageHeight]);
 
   return (
-    <section style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-      <div ref={ref} style={{ position: "relative", display: "flex", alignItems: "flex-start" }}>
-        <motion.div style={{ position: "absolute", left: -120, y }}>
+    <section className={styles.sectionContainer}>
+      <div ref={ref} className={styles.itemContainer}>
+        <motion.div className={styles.linkContainer} style={{ y }}>
           <Link href={href}>{linkText}</Link>
         </motion.div>
 
@@ -40,10 +41,10 @@ export default function ScrollLinkImage({
           src={image}
           alt={alt}
           width={350}
-          height={250}
-          style={{ borderRadius: 12, objectFit: "cover" }}
+          height={imageHeight}
+          className={styles.imageStyle}
         />
       </div>
     </section>
-  )
+  );
 }

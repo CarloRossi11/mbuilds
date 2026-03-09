@@ -135,6 +135,12 @@ export default function HomeClient() {
         linkText="Web Design"
         href="/services/web-design"
       />
+      <ScrollLinkImage
+        image="/Tech_Wrench_Solutions_Logo_Vertical-03.svg"
+        alt="Service 2"
+        linkText="Web 2 Design"
+        href="/services"
+      />
         </section>
 
         <section className={styles.services}>
