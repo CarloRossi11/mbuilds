@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.2s ease-out;
+  z-index: 1;
+  object-fit: cover;
+  image-orientation: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.content {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  padding: 0 1rem;
+  width: 90%;
+}
+
+
+/* Fade-in animation */
+.fade {
+  opacity: 0;
+  transform: translate(-50%, -40%);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 850px) {
+  .heroOverlay {
+    /* height: auto; */
+    min-height: 500px;
+    padding: 1rem 0;
+  }
+}

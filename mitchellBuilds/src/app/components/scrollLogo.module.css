@@ -1,0 +1,26 @@
+.logoWrapper {
+  position: relative;
+  width: 160px;   /* match image width */
+  height: 40px;   /* match image height */
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.visible {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}

@@ -1,0 +1,156 @@
+.contactForm {
+  background-color: #3C6A79;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: auto;
+  overflow-y: auto;
+
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  /* mobile first */
+}
+
+/* ---------------------------
+   Form Group + Labels
+---------------------------- */
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  margin-bottom: 0.25rem;
+}
+
+/* ---------------------------
+   Inputs, Selects, Textareas
+---------------------------- */
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  max-width: 420px;
+  /* 👈 prevents oversized fields */
+  padding: 0.6rem 0.75rem;
+  /* 👈 consistent height */
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 1.4;
+
+  background-color: #fff;
+  color: #000;
+
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Select-specific normalization */
+.formGroup select {
+  appearance: none;
+  padding-right: 2rem;
+  /* room for arrow */
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23666' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px 8px;
+}
+
+/* ---------------------------
+   Screen-reader-only text
+---------------------------- */
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------------------
+   Buttons
+---------------------------- */
+
+.contactForm button {
+  padding: 0 20px;
+  background-color: #CFC6BB;
+  color: #051D22;
+  border: var(--foreground);
+  border-radius: 128px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font: inherit; 
+  height: 48px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.contactForm button:hover {
+  background-color: #051D22;
+  color: #CFC6BB;
+  border: 1px solid #CFC6BB;
+}
+
+.formButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.successMessage {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* ---------------------------
+   Desktop Layout
+---------------------------- */
+
+@media (min-width: 640px) {
+  .contactForm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Full-width fields */
+  .formGroup textarea,
+  .formButton,
+  .successMessage {
+    grid-column: 1 / -1;
+  }
+
+  /* Optional: keep select half-width (more natural) */
+  .formGroup select {
+    max-width: 320px;
+  }
+}
+
+/* ---------------------------
+   Small Mobile Tweaks
+---------------------------- */
+
+@media (max-width: 600px) {
+  .wrapper {
+    min-height: 500px;
+  }
+}
