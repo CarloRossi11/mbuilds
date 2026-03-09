@@ -9,6 +9,7 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
 import { motion } from "motion/react";
+import ScrollLinkImage from "./components/ScrollLinkImage";
 
 // ToDo: //
 //////////
@@ -69,6 +70,7 @@ export default function HomeClient() {
 
       <main className={styles.main}>
         <section className={styles.weDo}>
+
           <h2>Website Development Service</h2>
           <p>
             Our flagship service is custom website development for small
@@ -127,6 +129,12 @@ export default function HomeClient() {
               </motion.div>
             </div>
           </div>
+       <ScrollLinkImage
+        image="/founder.jpeg"
+        alt="Service 1"
+        linkText="Web Design"
+        href="/services/web-design"
+      />
         </section>
 
         <section className={styles.services}>
