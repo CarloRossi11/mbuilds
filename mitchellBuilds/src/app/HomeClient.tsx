@@ -10,6 +10,7 @@ import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
 import { motion } from "motion/react";
 import ScrollLinkImage from "./components/ScrollLinkImage";
+import Navbar from "./components/Navbar";
 
 // ToDo: //
 //////////
@@ -26,7 +27,7 @@ export default function HomeClient() {
   return (
     <div className={styles.page}>
       <div className={styles.navBar}>
-        {isMobile ? <HamburgerMenu /> : <Header />}
+        <Navbar/>
       </div>
 
       <section className={styles.intro}>
