@@ -4,19 +4,16 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Cache Next.js static assets aggressively (they're content-hashed)
 [[headers]]
   for = "/_next/static/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Cache public images/fonts/SVGs for 1 week
 [[headers]]
   for = "/static/*"
   [headers.values]
     Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
 
-# Basic security headers for all routes
 [[headers]]
   for = "/*"
   [headers.values]
