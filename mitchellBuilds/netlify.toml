@@ -6,6 +6,12 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+  [plugins.inputs]
+    excludedRoutes = []
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP_FORMS = "true"
+
 [[headers]]
   for = "/*"
   [headers.values]
