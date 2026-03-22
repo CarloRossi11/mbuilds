@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
-  publish = "mitchellBuilds"
+  base    = "mitchellBuilds"
+  command = "next build"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -24,3 +25,9 @@
     X-XSS-Protection = "1; mode=block"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+[[redirects]]
+  from = "https://mitchellbuilds.com/*"
+  to = "https://www.mitchellbuilds.com/:splat"
+  status = 301
+  force = true
