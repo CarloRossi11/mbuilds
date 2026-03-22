@@ -1,5 +1,4 @@
 [build]
-  base    = "mitchellBuilds"
   command = "next build"
 
 [[plugins]]
@@ -27,10 +26,3 @@
     X-XSS-Protection = "1; mode=block"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-
-# www redirect
-[[redirects]]
-  from = "https://techwrench.co/*"
-  to = "https://www.techwrench.co/:splat"
-  status = 301
-  force = true
