@@ -1,12 +1,27 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Bebas_Neue, Raleway } from "next/font/google";
 
 const pressura = localFont({
   src: "./fonts/GT-Pressura-Bold.ttf",
   weight: "700",
   style: "normal",
   variable: "--font-pressura",
+  display: "swap",
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const raleway = Raleway({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -62,7 +77,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pressura.variable}`}>
+      <body
+        className={`${pressura.variable} ${bebasNeue.variable} ${raleway.variable}`}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
