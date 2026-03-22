@@ -1,16 +1,34 @@
 [build]
   base    = "mitchellBuilds"
   command = "next build"
-  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Cache Next.js static assets aggressively (they're content-hashed)
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache public images/fonts/SVGs for 1 week
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+# Basic security headers for all routes
 [[headers]]
   for = "/*"
   [headers.values]
-    Clear-Site-Data = '"cache", "cookies", "storage", "executionContexts"'
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-XSS-Protection = "1; mode=block"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
 
+# www redirect
 [[redirects]]
   from = "https://techwrench.co/*"
   to = "https://www.techwrench.co/:splat"
