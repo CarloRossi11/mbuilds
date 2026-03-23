@@ -4,9 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HamburgerMenu from "./components/HamburgerMenu";
-import useIsMobile from "./hooks/useIsMobile";
 import ContactForm from "./components/ContactForm";
 import { motion } from "motion/react";
 import ScrollLinkImage from "./components/ScrollLinkImage";
@@ -14,13 +11,9 @@ import Navbar from "./components/Navbar";
 
 // ToDo: //
 //////////
-// about founder shading
-// Increase White Space
-// add portfolio
-// 1.618 fonts
+
 
 export default function HomeClient() {
-  const isMobile = useIsMobile(850);
 
   const MotionLink = motion.create(Link);
 

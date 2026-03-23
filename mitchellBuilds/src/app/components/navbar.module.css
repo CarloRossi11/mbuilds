@@ -3,11 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: .25rem 2rem;
-    background: #CFC6BB;
+    background: #000;
     position: relative;
     z-index: 100;
     width: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #fff;
 }
 
 /* Desktop Links */

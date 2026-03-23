@@ -65,10 +65,10 @@ export default function Navbar() {
       >
         <Image
           className={styles.logo}
-          src="/MBlogo.jpg"
+          src="/whiteOnBlack.jpg"
           alt="Tech Wrench logo"
-          width={75}
-          height={75}
+          width={150}
+          height={108}
         />
       </MotionLink>
 
