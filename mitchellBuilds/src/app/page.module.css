@@ -30,7 +30,6 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #ffffff;
 }
 
 .intro {
@@ -38,18 +37,9 @@
   width: 100%;
 }
 
-.introLeft {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .introRight {
   height: 700px;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +47,7 @@
   text-align: center;
   padding: 1rem;
   color: #ffffff;
-  background-color: #051D22;
+  background-color: #000;
   box-shadow: -1px 1px 10px 0px #000000c8;
 }
 
@@ -173,7 +163,7 @@
 }
 
 a.primary {
-  background-color: #CFC6BB;
+  background-color: #d6f958;
   color: #051D22;
   border: var(--foreground);
   gap: 8px;

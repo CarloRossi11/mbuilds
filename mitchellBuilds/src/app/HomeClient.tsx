@@ -12,31 +12,27 @@ import Navbar from "./components/Navbar";
 // ToDo: //
 //////////
 
-
 export default function HomeClient() {
-
   const MotionLink = motion.create(Link);
 
   return (
     <div className={styles.page}>
       <div className={styles.navBar}>
-        <Navbar/>
+        <Navbar />
       </div>
 
       <section className={styles.intro}>
-        <div className={styles.introLeft}>
-          <Image
+        <div className={styles.introRight}>
+          <h1>High End Contracting Services</h1>
+          {/* <Image
             id="hero"
             className={styles.logo}
-            src="/twsVerticalWhite.svg"
-            alt="Tech Wrench Web Solutions Logo"
-            width={350}
-            height={250}
+            src="/Mitchell_Builds_Branding_Final_Files_LOGO WHITE ON BLACK.png"
+            alt="Mitchell Builds Logo"
+            width={300}
+            height={195}
             priority
-          />
-        </div>
-        <div className={styles.introRight}>
-          <h1>Beautiful, High Performing Websites</h1>
+          /> */}
           <p className={styles.introText}>
             {" "}
             We specialize in custom designed & developed lead generating
@@ -64,7 +60,6 @@ export default function HomeClient() {
 
       <main className={styles.main}>
         <section className={styles.weDo}>
-
           <h2>Website Development Service</h2>
           <p>
             Our flagship service is custom website development for small
@@ -123,18 +118,18 @@ export default function HomeClient() {
               </motion.div>
             </div>
           </div>
-       <ScrollLinkImage
-        image="/founder.jpeg"
-        alt="Service 1"
-        linkText="Web Design"
-        href="/services/web-design"
-      />
-      <ScrollLinkImage
-        image="/Tech_Wrench_Solutions_Logo_Vertical-03.svg"
-        alt="Service 2"
-        linkText="Web 2 Design"
-        href="/services"
-      />
+          <ScrollLinkImage
+            image="/founder.jpeg"
+            alt="Service 1"
+            linkText="Web Design"
+            href="/services/web-design"
+          />
+          <ScrollLinkImage
+            image="/Tech_Wrench_Solutions_Logo_Vertical-03.svg"
+            alt="Service 2"
+            linkText="Web 2 Design"
+            href="/services"
+          />
         </section>
 
         <section className={styles.services}>
