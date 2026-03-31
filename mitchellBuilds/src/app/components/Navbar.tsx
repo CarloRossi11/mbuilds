@@ -76,11 +76,11 @@ export default function Navbar() {
       <div className={styles.desktopLinks}>
         <MotionLink
           className={styles.button}
-          href="/services"
+          href="/portfolio"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <h3>Services</h3>
+          <h3>Portfolio</h3>
         </MotionLink>
 
         <MotionLink
@@ -127,8 +127,8 @@ export default function Navbar() {
             </motion.li>
 
             <motion.li variants={itemVariants}>
-              <Link href="/services" onClick={() => setIsOpen(false)}>
-                Services
+              <Link href="/portfolio" onClick={() => setIsOpen(false)}>
+                Portfolio
               </Link>
             </motion.li>
 

@@ -62,31 +62,31 @@ export default function HomeClient() {
             image="/casework.webp"
             alt="Service 1"
             linkText="Casework"
-            href="/services/web-design"
+            href="/portfolio"
           />
           <ScrollLinkImage
             image="/fentry.webp"
             alt="Service 2"
             linkText="Front Entry"
-            href="/services"
+            href="/portfolio"
           />
            <ScrollLinkImage
             image="/puts.webp"
             alt="Service 2"
             linkText="Under Stair Storage"
-            href="/services"
+            href="/portfolio"
           />
            <ScrollLinkImage
             image="/vanity.webp"
             alt="Service 2"
             linkText="Vanity"
-            href="/services"
+            href="/portfolio"
           />
            <ScrollLinkImage
             image="/walnut.webp"
             alt="Service 2"
             linkText="Walnut Passage"
-            href="/services"
+            href="/portfolio"
           />
           </section>
         

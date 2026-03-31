@@ -25,14 +25,11 @@ export default function Page() {
       <div className={styles.main}>
         <ImageViewer
           images={[
-            { src: "/solarSunset.jpeg", alt: "Sunset with clean solar" },
-            { src: "/solarShiny.jpeg", alt: "Shiny Solar" },
-            { src: "/seeThrough.JPG", alt: "Scenic see through" },
-            { src: "/roofSolar.jpeg", alt: "Cloudy skies, clean panels" },
-            { src: "/city.png", alt: "city views" },
-            { src: "/solarCompare.jpeg", alt: "clean vs dirty solar" },
-            { src: "/patio.png", alt: "patio" },
-            { src: "/levelsBack.jpeg", alt: "cleaned building" },
+            { src: "/casework.webp", alt: "Casework" },
+            { src: "/fentry.webp", alt: "Front Entry" },
+            { src: "/puts.webp", alt: "Under Stair Storage" },
+            { src: "/vanity.webp", alt: "Vanity" },
+            { src: "/walnut.webp", alt: "Walnut Passage" },
           ]}
         />
         <div className={styles.buttonContainer}>
