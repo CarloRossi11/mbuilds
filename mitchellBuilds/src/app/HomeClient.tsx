@@ -35,10 +35,7 @@ export default function HomeClient() {
           /> */}
           <p className={styles.introText}>
             {" "}
-            We specialize in custom designed & developed lead generating
-            websites to fit your specific needs -no Wordpress or AI slop. Our
-            websites are built to reach more customers and deliver a premium
-            experience.
+            We specialize in expertly crafted contracting services for discerning clients. With a commitment to excellence and attention to detail, we bring your vision to life with precision and quality. From custom home builds to high-end renovations, our team of skilled professionals delivers unparalleled craftsmanship and personalized service. 
           </p>
           <div className={styles.ctas}>
             <MotionLink
@@ -59,78 +56,40 @@ export default function HomeClient() {
       </section>
 
       <main className={styles.main}>
-        <section className={styles.weDo}>
-          <h2>Website Development Service</h2>
-          <p>
-            Our flagship service is custom website development for small
-            businesses. We work closely with our clients to understand their
-            unique needs and goals, and then create a website that not only
-            looks great but also drives results. Our websites:
-          </p>
-          <div className={styles.features}>
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.2 }}
-              >
-                <div className={styles.feature}>
-                  <h3 className={styles.bullet}>Load quickly</h3>
-                  <p className={styles.support}>
-                    Every website we develop has a 95+ performance score, this
-                    promotes user interaction and reduces churn.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.2 }}
-              >
-                <div className={styles.feature}>
-                  <h3 className={styles.bullet}>
-                    Responsive Design for Mobile and Desktop
-                  </h3>
-                  <p className={styles.support}>
-                    We design each site to look and behave beautifully on every
-                    screen size, from the smallest phone to the largest monitor.
-                  </p>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.2 }}
-              >
-                <div className={styles.feature}>
-                  <h3 className={styles.bullet}>
-                    Search Engine Optimized (SEO)
-                  </h3>
-                  <p className={styles.support}>
-                    There's no point in having a stunning website if nobody is
-                    going to see it. That's why we make sure each website is as
-                    optimzed as possible to populate high in search results.
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
+
+          <section className={styles.imageLinks}>
           <ScrollLinkImage
-            image="/founder.jpeg"
+            image="/casework.webp"
             alt="Service 1"
-            linkText="Web Design"
+            linkText="Casework"
             href="/services/web-design"
           />
           <ScrollLinkImage
-            image="/Tech_Wrench_Solutions_Logo_Vertical-03.svg"
+            image="/fentry.webp"
             alt="Service 2"
-            linkText="Web 2 Design"
+            linkText="Front Entry"
             href="/services"
           />
-        </section>
+           <ScrollLinkImage
+            image="/puts.webp"
+            alt="Service 2"
+            linkText="Under Stair Storage"
+            href="/services"
+          />
+           <ScrollLinkImage
+            image="/vanity.webp"
+            alt="Service 2"
+            linkText="Vanity"
+            href="/services"
+          />
+           <ScrollLinkImage
+            image="/walnut.webp"
+            alt="Service 2"
+            linkText="Walnut Passage"
+            href="/services"
+          />
+          </section>
+        
 
         <section className={styles.services}>
           <h1>Our Products</h1>
