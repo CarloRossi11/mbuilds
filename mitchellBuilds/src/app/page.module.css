@@ -156,7 +156,7 @@ a.secondary {
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #051D22;
+  background-color: #000;
   color: #fff;
   width: 100%;
 }
@@ -168,9 +168,9 @@ a.secondary {
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #051D22;
-    color: #CFC6BB;
-    border: 1px solid #CFC6BB;
+    background-color: #000;
+    color: #d6f958;
+    border: 1px solid #d6f958;
   }
 
   a.secondary:hover {

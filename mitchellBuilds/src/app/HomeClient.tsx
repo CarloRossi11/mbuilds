@@ -35,7 +35,12 @@ export default function HomeClient() {
           /> */}
           <p className={styles.introText}>
             {" "}
-            We specialize in expertly crafted contracting services for discerning clients. With a commitment to excellence and attention to detail, we bring your vision to life with precision and quality. From custom home builds to high-end renovations, our team of skilled professionals delivers unparalleled craftsmanship and personalized service. 
+            We specialize in expertly crafted contracting services for
+            discerning clients. With a commitment to excellence and attention to
+            detail, we bring your vision to life with precision and quality.
+            From custom home builds to high-end renovations, our team of skilled
+            professionals delivers unparalleled craftsmanship and personalized
+            service.
           </p>
           <div className={styles.ctas}>
             <MotionLink
@@ -56,8 +61,7 @@ export default function HomeClient() {
       </section>
 
       <main className={styles.main}>
-
-          <section className={styles.imageLinks}>
+        <section className={styles.imageLinks}>
           <ScrollLinkImage
             image="/casework.webp"
             alt="Service 1"
@@ -70,28 +74,27 @@ export default function HomeClient() {
             linkText="Front Entry"
             href="/portfolio"
           />
-           <ScrollLinkImage
+          <ScrollLinkImage
             image="/puts.webp"
             alt="Service 2"
             linkText="Under Stair Storage"
             href="/portfolio"
           />
-           <ScrollLinkImage
+          <ScrollLinkImage
             image="/vanity.webp"
             alt="Service 2"
             linkText="Vanity"
             href="/portfolio"
           />
-           <ScrollLinkImage
+          <ScrollLinkImage
             image="/walnut.webp"
             alt="Service 2"
             linkText="Walnut Passage"
             href="/portfolio"
           />
-          </section>
-        
+        </section>
 
-        <section className={styles.services}>
+        {/* <section className={styles.services}>
           <h1>Our Products</h1>
           <div className={styles.servicesContent}>
             <motion.div
@@ -167,7 +170,7 @@ export default function HomeClient() {
               </MotionLink>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className={styles.contact}>
           <h2>Get Started Today</h2>
