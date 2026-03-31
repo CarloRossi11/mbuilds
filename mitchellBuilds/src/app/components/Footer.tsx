@@ -13,10 +13,10 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.address}>
           <div className={styles.addressContainer}>
-            <strong>Tech Wrench Web Solutions</strong>
+            <strong>Mitchell Builds</strong>
 
-            <a className={styles.wrench} href="mailto:carlo@techwrench.co">
-              carlo@techwrench.co
+            <a className={styles.wrench} href="mailto:info@mitchellbuilds.co">
+              info@mitchellbuilds.co
             </a>
           </div>
         </div>
@@ -34,10 +34,10 @@ export default function Footer() {
           >
             <Image
               className={styles.logo}
-              src="/logoBlueT.svg"
-              alt="Tech Wrench logo"
-              width={75}
-              height={75}
+              src="/whiteOnBlack.jpg"
+              alt="Mitchell Builds logo"
+              width={150}
+              height={108}
               priority
             />
           </MotionLink>
@@ -47,10 +47,10 @@ export default function Footer() {
             <p className={styles.socialLabel}>Follow Us:</p>
             <div className={styles.socialLinks}>
               <a
-                href="https://www.instagram.com/techwrenchco/"
+                href="https://www.instagram.com/mitchell_builds_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Visit Tech Wrench on Instagram"
+                aria-label="Visit Mitchell Builds on Instagram"
               >
                 <Image
                   className={styles.icon}
@@ -61,7 +61,7 @@ export default function Footer() {
                   height={16}
                 />
               </a>
-              <a
+              {/* <a
                 href="https://www.facebook.com/people/Tech-Wrench/61582078050775/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -90,11 +90,11 @@ export default function Footer() {
                   width={16}
                   height={16}
                 />
-              </a>
+              </a> */}
             </div>
           </div>
           <p>©2025 Tech Wrench All rights reserved.</p>
-          {/* <p>
+          <p>
             Website developed by{" "}
             <a
               href="https://techwrench.co/"
@@ -103,7 +103,7 @@ export default function Footer() {
             >
               Tech Wrench
             </a>
-          </p> */}
+          </p>
         </div>
       </footer>
     </div>
