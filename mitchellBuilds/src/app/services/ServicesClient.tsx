@@ -1,21 +1,20 @@
 "use client";
 
 import styles from "./services.module.css";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
-import HamburgerMenu from "../components/HamburgerMenu";
-import useIsMobile from "../hooks/useIsMobile";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import Reveal from "../components/Reveal";
+import Navbar from "../components/Navbar";
 
 export default function Page() {
   const MotionLink = motion.create(Link);
-  const isMobile = useIsMobile(850);
   return (
     <div className={styles.wrapper}>
-      {isMobile ? <HamburgerMenu /> : <Header />}
+       <div className={styles.navBar}>
+        <Navbar />
+      </div>
       <div className={styles.heroArea}>
         <Reveal direction="right">
           <h1>SERVICES</h1>
