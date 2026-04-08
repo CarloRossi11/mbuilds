@@ -13,14 +13,16 @@
 }
 
 .icon {
-filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(406%) hue-rotate(148deg) brightness(91%) contrast(88%);  transition:
+  filter: brightness(0) saturate(100%) invert(89%) sepia(47%) saturate(512%) hue-rotate(32deg) brightness(103%);
+  transition:
     background 0.2s,
     color 0.2s,
     border-color 0.2s;
 }
 
 .icon:hover {
-filter: brightness(0) saturate(100%) invert(4%) sepia(60%) saturate(5463%) hue-rotate(177deg) brightness(96%) contrast(96%);}
+filter: brightness(0) invert(1);
+}
 
 .footer a {
   align-items: center;
@@ -94,7 +96,7 @@ filter: brightness(0) saturate(100%) invert(4%) sepia(60%) saturate(5463%) hue-r
 }
 
 .wrench:hover {
-  color: #3C6A79;
+  color: #d6f958;
 }
 
 

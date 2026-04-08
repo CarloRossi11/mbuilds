@@ -156,7 +156,16 @@ a.secondary {
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #000;
+background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #1a1a1a 15%,
+    #404040 30%,
+    #808080 50%,
+    #bfbfbf 70%,
+    #e6e6e6 85%,
+    #ffffff 100%
+  );
   color: #fff;
   width: 100%;
 }

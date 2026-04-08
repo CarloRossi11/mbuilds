@@ -3,8 +3,8 @@
 import styles from "./portfolio.module.css";
 import Footer from "../components/Footer";
 import ImageViewer from "../components/ImageViewer";
-import HeroOverlay from "../components/HeroOverlay";
 import Navbar from "../components/Navbar";
+import Reveal from "../components/Reveal";
 
 export default function Page() {
   return (
@@ -12,15 +12,12 @@ export default function Page() {
       <div className={styles.navBar}>
         <Navbar />
       </div>
-      <HeroOverlay
-        backgroundSrc="/artsyLogo.png"
-        height="500px"
-        overlayDarkness={0.5}
-        gradientOverlay
-        fadeIn
-      >
-        <h1>PORTFOLIO</h1>
-      </HeroOverlay>
+      <div className={styles.heroArea}>
+        <Reveal direction="right">
+          <h1>Portfolio</h1>
+          <p>Learn more about what Tech Wrench is and who is behind it.</p>
+        </Reveal>
+      </div>
       <div className={styles.main}>
         <ImageViewer
           images={[

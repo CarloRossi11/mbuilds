@@ -1,5 +1,5 @@
 .contactForm {
-  background-color: #3C6A79;
+  background-color: #000;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -88,8 +88,8 @@
 
 .contactForm button {
   padding: 0 20px;
-  background-color: #CFC6BB;
-  color: #051D22;
+  background-color: #d6f958;
+  color: #000;
   border: var(--foreground);
   border-radius: 128px;
   font-size: 16px;
@@ -106,9 +106,9 @@
 }
 
 .contactForm button:hover {
-  background-color: #051D22;
-  color: #CFC6BB;
-  border: 1px solid #CFC6BB;
+  background-color: #000;
+  color: #d6f958;
+  border: 1px solid #d6f958;
 }
 
 .formButton {

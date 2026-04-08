@@ -46,7 +46,7 @@ export default function ScrollLinkImage({
     <section className={styles.sectionContainer}>
       <div ref={ref} className={styles.itemContainer}>
         <motion.div className={styles.linkContainer} style={{ y }}>
-          <Link href={href}>{linkText}</Link>
+          <Link href={href}><h3>{linkText}</h3></Link>
         </motion.div>
 
         <Image
