@@ -15,8 +15,8 @@ export default function Footer() {
           <div className={styles.addressContainer}>
             <strong>Mitchell Builds</strong>
 
-            <a className={styles.wrench} href="mailto:info@mitchellbuilds.co">
-              info@mitchellbuilds.co
+            <a className={styles.wrench} href="mailto:Matt@mitchellbuilds.net">
+              Matt@mitchellbuilds.net
             </a>
           </div>
         </div>
