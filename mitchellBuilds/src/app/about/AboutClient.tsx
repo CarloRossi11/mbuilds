@@ -26,7 +26,7 @@ export default function Page() {
         <div className={styles.company}>
           <div className={styles.companyImage}>
             <Image
-              src="/Mitchell_Builds_Branding_Final_Files_LOGO BLACK ON WHITE.png"
+              src="/MBTransparentBlack.png"
               alt="Mitchell Builds Logo"
               width={511}
               height={331}
