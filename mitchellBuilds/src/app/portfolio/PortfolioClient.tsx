@@ -15,7 +15,7 @@ export default function Page() {
       <div className={styles.heroArea}>
         <Reveal direction="right">
           <h1>Portfolio</h1>
-          <p>Learn more about what Tech Wrench is and who is behind it.</p>
+          {/* <p>Learn more about what Tech Wrench is and who is behind it.</p> */}
         </Reveal>
       </div>
       <div className={styles.main}>

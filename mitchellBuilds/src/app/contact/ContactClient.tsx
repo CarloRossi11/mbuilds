@@ -16,9 +16,9 @@ export default function Page() {
         <Reveal direction="right">
           <h1>CONTACT</h1>
           <p>
-            Please complete the form below and we will get back to you within
-            1-2 business days to discuss the next steps for your project.{" "}
-          </p>
+              Complete the form below to discuss the next steps of your
+              project.{" "}
+            </p>
         </Reveal>
       </div>
       <div className={styles.main}>

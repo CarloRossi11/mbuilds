@@ -19,7 +19,7 @@ export default function Page() {
       <div className={styles.heroArea}>
         <Reveal direction="right">
           <h1>ABOUT</h1>
-          <p>Learn more about what Tech Wrench is and who is behind it.</p>
+          <p>Learn more about what Mitchell Builds and who's behind it.</p>
         </Reveal>
       </div>
       <div className={styles.main}>
@@ -27,7 +27,7 @@ export default function Page() {
           <div className={styles.companyImage}>
             <Image
               src="/Mitchell_Builds_Branding_Final_Files_LOGO BLACK ON WHITE.png"
-              alt="Tech Wrench Web Solutions Logo"
+              alt="Mitchell Builds Logo"
               width={511}
               height={331}
               priority
