@@ -26,22 +26,25 @@ export default function Page() {
         <div className={styles.company}>
           <div className={styles.companyImage}>
             <Image
-              src="/twsVerticalWhite.svg"
+              src="/Mitchell_Builds_Branding_Final_Files_LOGO BLACK ON WHITE.png"
               alt="Tech Wrench Web Solutions Logo"
-              width={300}
-              height={400}
+              width={511}
+              height={331}
               priority
             />
           </div>
           <div className={styles.founderText}>
             <h1>The Company</h1>
             <p>
-              Tech Wrench Web Solutions is dedicated to providing small
-              businesses with high quality, custom web development services. We
-              understand the unique challenges that small businesses face when
-              trying to establish an online presence, and we are committed to
-              helping our clients overcome those challenges through effective
-              website design, SEO, and branding strategies.
+              Mitchell Builds is a high-end contracting company dedicated to
+              delivering exceptional craftsmanship and personalized service.
+              With a focus on quality and attention to detail, we specialize in
+              custom home builds, renovations, and remodeling projects. Our team
+              of skilled professionals works closely with clients to bring their
+              visions to life, ensuring that every project is completed with
+              precision and care. At Mitchell Builds, we are committed to
+              exceeding our clients' expectations and creating spaces that are
+              both beautiful and functional.
             </p>
           </div>
         </div>
@@ -49,24 +52,23 @@ export default function Page() {
           <div className={styles.founderText}>
             <h1>The Founder</h1>
             <p>
-              Carlo Berardelli established Tech Wrench Web Solutions in 2025. He
-              graduated with a Business Degree in 2014 from California
-              University of Pennsylvania, and later received his Software
-              Engineering Immersive Certificate from General Assembly in 2020.
-              Carlo has over 5 years of professional experience in web
-              development, and an additional 5 years of account managment and
-              customer support experience. With his diverse background and
-              skillset, Carlo is uniquely qualified to help small businesses
-              establish a strong online presence through custom websites,
-              effective SEO strategies, and compelling branding.
+              Matthew Mitchell established Mitchell Builds in 2018 with the
+              vision of creating a contracting company that prioritizes quality,
+              craftsmanship, and customer satisfaction. With a background in
+              carpentry and a passion for construction, Matt has built a
+              reputation for delivering exceptional results on every project.
+              His commitment to excellence and attention to detail have made
+              Mitchell Builds a trusted name in the industry, known for
+              transforming clients' visions into reality with precision and
+              care.
             </p>
           </div>
           <div className={styles.founderImage}>
             <Image
-              src="/founder.jpeg"
-              alt="Photo of Carlo Berardelli, founder of Tech Wrench Web Solutions"
+              src="/founder.jpg"
+              alt="Photo of Matt Mitchell, founder of Mitchell Builds"
               width={300}
-              height={400}
+              height={300}
               priority
             />
           </div>

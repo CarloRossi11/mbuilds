@@ -26,14 +26,9 @@
 /* Moving link styling */
 .linkContainer {
   position: absolute;
-  left: -10%;
+  left: -5%;
   z-index: 1;
-}
-
-@media screen and (max-width: 600px) {
-  .linkContainer {
-    left: 0;
-    top: 0px;
+  top: 0px;
     transform: none;
     color: #ffffff;
     background: linear-gradient(to right, #000000c8 0%, transparent 100%);
@@ -53,5 +48,30 @@
       black 80%,
       transparent 100%
     );
+}
+
+@media screen and (max-width: 600px) {
+  .linkContainer {
+    left: 0;
+    /* top: 0px;
+    transform: none;
+    color: #ffffff;
+    background: linear-gradient(to right, #000000c8 0%, transparent 100%);
+    padding: 4px 40px 4px 8px;
+    box-shadow: none;
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    ); */
   }
 }

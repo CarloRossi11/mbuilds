@@ -1,7 +1,7 @@
 .heroArea {
-  background-color: #051D22;
+  background-color: #000;
   height: 500px;
-  color: #CFC6BB;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,9 +49,8 @@
 }
 
 a.primary {
-  background-color: #3C6A79;
-  color: #fff;
-  border: var(--foreground);
+  background-color: #000;
+  color: #d6f958;
   gap: 8px;
 }
 
@@ -68,9 +67,9 @@ a.secondary {
 
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background-color: #051D22;
-    color: #fff;
-    /* border: 1px solid #cfc7bb; */
+    background-color: #d6f958;
+    color: #000;
+    border: 1px solid #000;
   }
 
   a.secondary:hover {
