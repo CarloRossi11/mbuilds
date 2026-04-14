@@ -26,30 +26,21 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Wrench - Website Development Services",
+  title: "Mitchell Builds | Premium Contracting Services",
   description:
-    "Tech Wrench offers professional website development services, specializing in custom and lead generation websites to help your business grow online.",
+    "Mitchell Builds offers professional contracting services, specializing in custom home builds, renovations, and commercial projects.",
   icons: {
     icon: [
-      {
-        url: "/favicon-light.svg",
-        type: "image/svg+xml",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/favicon-dark.svg",
-        type: "image/svg+xml",
-        media: "(prefers-color-scheme: dark)",
-      },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "192x192", type: "image/png" },
     ],
   },
-
   openGraph: {
-    title: "Tech Wrench - Website Development Services",
+    title: "Mitchell Builds | Premium Contracting Services",
     description:
-      "Professional website development services specializing in custom and lead generation websites.",
-    url: "https://techwrench.co",
-    siteName: "Tech Wrench",
+      "Professional contracting services specializing in custom home builds, renovations, and commercial projects.",
+    url: "https://mitchellbuilds.netlify.app",
+    siteName: "Mitchell Builds",
     images: [
       {
         url: "https://techwrench.co/og-image.png",
@@ -63,10 +54,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Tech Wrench - Website Development Services",
+    title: "Mitchell Builds | Premium Contracting Services",
     description:
-      "Professional website development services specializing in custom and lead generation websites.",
-    images: ["https://techwrench.co/og-image.png"],
+      "Professional contracting services specializing in custom home builds, renovations, and commercial projects.",
+    images: ["https://mitchellbuilds.netlify.app/og-image.png"],
   },
 };
 
