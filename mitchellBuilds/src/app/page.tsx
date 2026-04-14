@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import HomeClient from "./HomeClient";
 
 export const metadata: Metadata = {
-  title: "Custom Website Development Services | Tech Wrench",
-  description: "Custom high performing websites developed just for you by Tech Wrench.",
+  title: "Premium Contracting Services | Mitchell Builds",
+  description: "Mitchell Builds offers top-tier contracting services, specializing in custom home builds, renovations, and commercial projects. Our expert team delivers exceptional craftsmanship and personalized solutions to bring your vision to life.",
   alternates: {
-    canonical: "https://techwrench.co/",
+    canonical: "https://mitchellbuilds.netlify.app/",
   },
 
   openGraph: {
-    title: "Custom Website Development Services | Tech Wrench",
-    description:"Custom high performing websites developed just for you by Tech Wrench.",
-    url: "https://techwrench.co/",
-    siteName: "Tech Wrench",
+    title: "Premium Contracting Services | Mitchell Builds",
+    description: "Mitchell Builds offers top-tier contracting services, specializing in custom home builds, renovations, and commercial projects.",
+    url: "https://mitchellbuilds.netlify.app/",
+    siteName: "Mitchell Builds",
     type: "website",
   },
 
