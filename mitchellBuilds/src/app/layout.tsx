@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Mitchell Builds",
     images: [
       {
-        url: "https://techwrench.co/og-image.png",
+        url: "https://mitchellbuilds.netlify.app/og-image.png",
         width: 1200,
         height: 630,
       },
